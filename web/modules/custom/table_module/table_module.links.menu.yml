@@ -1,0 +1,12 @@
+table_module.dynamic_select:
+  title: 'Usuarios'
+  description: 'Listado de usuarios'
+  route_name: table_module.dynamic_select
+  menu_name: 'main'
+  
+table_module.form_user:
+  title: 'Crear usuario'
+  description: 'Formulario para creción de usuarios'
+  route_name: table_module.form_user
+  menu_name: 'main'
+

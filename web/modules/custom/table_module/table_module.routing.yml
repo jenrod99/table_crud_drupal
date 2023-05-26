@@ -1,0 +1,13 @@
+table_module.dynamic_select:
+  path: "/example-module/data"
+  defaults:
+    _controller: '\Drupal\table_module\Controller\TableModuleController::dynamicSelect'
+  requirements:
+    _permission: "access content"
+
+table_module.form_user:
+  path: "/example-module/form"
+  defaults:
+    _controller: '\Drupal\table_module\Controller\TableModuleController::formController'
+  requirements:
+    _permission: "access content"

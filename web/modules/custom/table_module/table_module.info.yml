@@ -1,0 +1,9 @@
+name: 'Table Module'
+type: module
+core_version_requirement: ^8 || ^9
+
+description: 'Custom example-module. It allows create a form and data-table based on users information.'
+version: 1.0.0
+package: 'Table Module'
+dependencies:
+  - drupal:node

@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * Implements hook_schema().
+ * @return array
+ */
+function table_module_schema()
+{
+    $schema['example_users'] = [
+        'description' => 'Aquí encontraremos la información de los usuarios del sitio.',
+        'fields' => [
+            'id' => [
+                'description' => 'ID único del usuario en BD.',
+                'type' => 'serial',
+                'not null' => TRUE,
+            ],
+            'name' => [
+                'description' => 'Nombre del usuario',
+                'type' => 'varchar',
+                'length' => 128,
+                'not null' => TRUE,
+                'default' => '',
+            ],
+            'identification' => [
+                'description' => 'Número de identificación del usuario.',
+                'type' => 'varchar',
+                'not null' => FALSE,
+                'length' => 128,
+            ],
+            'position' => [
+                'description' => 'Cargo que ocupa el usuario.',
+                'type' => 'int',
+                'not null' => FALSE,
+            ],
+            'status' => [
+                'description' => 'Estado de activación del usuario',
+                'type' => 'int',
+                'not null' => FALSE,
+            ]
+        ],
+        'primary key' => [
+            'id',
+        ],
+    ];
+    return $schema;
+}
